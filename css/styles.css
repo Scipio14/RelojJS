@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+html, body {
+	font-family: sans-serif;
+	font-size: 16px;
+	background: white;
+
+}
+h1{
+font-size: 2.5rem;
+text-align: center;
+margin-top: 1rem;
+margin-bottom:1rem;
+}
+.center{text-align: center;}
+.container{
+	background: #ccc;
+	width: 90vw;
+	margin-left: 1.5rem;
+	height: 200px;
+	border-radius: 1rem;
+	box-shadow: 0px 3px 3px #000;
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:flex-start;
+
+
+
+}
+.container h3 {text-align:left;}
+
+.flag img {
+	display: inline-flex;
+	float:left;
+	padding-left:0.75rem;
+	width:15rem;
+	background-size: contain;
+}
+
+#hMexico,#hRussia {
+	display: inline-flex;
+	width: 15rem;
+	font-size: 3rem;
+	/*vertical-align:;*/
+	margin-left: 1.5rem;
+	margin-top: 2rem;
+	font-weight: 900;
+}
+#dia-semana,#dia-mes,#mes{
+display: flex;
+float: left;
+margin-left:1.5rem;
+font-size: 1.5rem;
+
+}
+
+@media screen and (max-width: 64rem){
+	h1{
+		background-color: red;
+	}
+}
+
+@media screen and (max-width:48rem){
+	h1{
+		background-color: green;
+		font-size: 2rem;
+
+	}
+	.container{
+		width: 95vw;
+		margin-left: 0.75rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container h3{
+		justify-content: center;
+		font-size: 1rem;
+	}
+
+	.flag img {
+		width: 9rem;
+		margin: auto;
+		justify-content: center;
+
+	}
+
+	#hMexico,#hRussia {
+		margin-top: 0.75rem;
+		justify-content: center;
+		font-size: 2rem;
+	}
+}
